@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohammed Abdul Awan | HR Admin & Onboarding</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6fa;--surface:#fff;--ink:#14213d;--muted:#51607a;--line:#d9e0ec;--accent:#0f766e;--accent-ink:#fff;--soft:#e3f1ef;--gold:#b8860b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1626;--surface:#16213a;--ink:#eaf0fb;--muted:#a3b1cb;--line:#2a3856;--accent:#4fd1c0;--accent-ink:#0e1626;--soft:#173a45;--gold:#e5b94e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1626;--surface:#16213a;--ink:#eaf0fb;--muted:#a3b1cb;--line:#2a3856;--accent:#4fd1c0;--accent-ink:#0e1626;--soft:#173a45;--gold:#e5b94e;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Manrope",system-ui,sans-serif}
+h1,h2,h3{font-family:"Playfair Display","Manrope",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{display:flex;gap:20px;flex-wrap:wrap;padding:18px 0;font-size:15px}
+nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--ink)}
+.hero{padding:34px 0 56px;display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center}
+.hero h1{font-size:clamp(38px,6.4vw,68px);font-weight:700;letter-spacing:-.02em}
+.role{font-size:clamp(18px,2.4vw,23px);color:var(--accent);font-weight:600;margin:12px 0 18px}
+.lede{max-width:56ch;color:var(--muted);font-size:19px;margin:0 0 24px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.chip{border:1px solid var(--line);background:var(--surface);padding:6px 14px;border-radius:99px;font-size:15px}
+.chip.on{background:var(--soft);border-color:var(--accent);font-weight:600}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;margin:0 10px 10px 0}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.mono{width:150px;height:150px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font:700 52px "Playfair Display",sans-serif;letter-spacing:-.03em;box-shadow:0 0 0 8px var(--soft)}
+section{padding:54px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(28px,4vw,38px);margin-bottom:8px}
+.sub{color:var(--muted);max-width:62ch;margin:0 0 30px}
+/* lifecycle */
+.life{display:grid;grid-template-columns:270px 1fr;gap:26px;align-items:start}
+.steps{display:flex;flex-direction:column;gap:8px}
+.step{display:flex;gap:12px;align-items:center;text-align:left;font:600 16px "Manrope",sans-serif;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;cursor:pointer}
+.step b{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--soft);font-size:14px}
+.step[aria-selected="true"]{border-color:var(--accent);box-shadow:inset 4px 0 0 var(--accent)}
+.step[aria-selected="true"] b{background:var(--accent);color:var(--accent-ink)}
+.step:focus-visible,.btn:focus-visible,nav a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px}
+.panel h3{font-size:26px;margin-bottom:10px}
+.panel p{margin:0 0 14px;color:var(--muted)}
+.panel ul{margin:0;padding-left:20px}.panel li{margin-bottom:6px}
+.tag{display:inline-block;margin-top:8px;font-size:14px;color:var(--gold);font-weight:600}
+/* experience */
+.job{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px;margin-bottom:18px}
+.job header{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.job h3{font-size:23px}.job .when{color:var(--muted);font-weight:600}
+.job ul{padding-left:20px;margin:12px 0 0}.job li{margin-bottom:8px}
+/* expertise */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{font-size:19px;margin-bottom:12px}
+.pills{display:flex;flex-wrap:wrap;gap:7px}
+.pills span{background:var(--soft);border-radius:6px;padding:3px 10px;font-size:15px}
+.gulf{background:var(--ink);color:var(--bg);border-radius:14px;padding:28px;margin-top:22px}
+.gulf h3{font-size:24px;margin-bottom:8px}.gulf p{margin:0 0 14px;opacity:.85}
+.gulf .pills span{background:rgba(255,255,255,.14);color:inherit}
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);font-size:16px}
+th{background:var(--soft)}tr:last-child td{border-bottom:0}
+.scroll{overflow-x:auto}
+footer{padding:36px 0 50px;color:var(--muted);font-size:15px;border-top:1px solid var(--line)}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.contact .card p{margin:0;word-break:break-word}.contact .card small{color:var(--muted)}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.mono{width:104px;height:104px;font-size:36px;order:-1}
+.life{grid-template-columns:1fr}.steps{flex-direction:row;overflow-x:auto;padding-bottom:6px}.step{flex:none}.panel,.job{padding:20px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+:root{--violet:#7c3aed;--coral:#e8590c;--blob1:rgba(15,118,110,.24);--blob2:rgba(124,58,237,.22);--blob3:rgba(245,158,11,.24);--blob4:rgba(232,89,12,.16)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--violet:#a78bfa;--coral:#fb923c;--blob1:rgba(79,209,192,.20);--blob2:rgba(167,139,250,.26);--blob3:rgba(251,191,36,.14);--blob4:rgba(251,113,133,.16)}}
+:root[data-theme="dark"]{--violet:#a78bfa;--coral:#fb923c;--blob1:rgba(79,209,192,.20);--blob2:rgba(167,139,250,.26);--blob3:rgba(251,191,36,.14);--blob4:rgba(251,113,133,.16)}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(640px 440px at 6% 4%,var(--blob1),transparent 70%),radial-gradient(760px 520px at 96% 10%,var(--blob2),transparent 70%),radial-gradient(760px 520px at 88% 68%,var(--blob3),transparent 70%),radial-gradient(640px 520px at 4% 88%,var(--blob4),transparent 70%)}
+.btn{background:linear-gradient(135deg,var(--accent),var(--violet))}
+.btn.alt{background:transparent}
+.photo{width:190px;height:190px;border-radius:50%;object-fit:cover;object-position:center top;border:6px solid var(--surface);box-shadow:0 0 0 6px var(--violet),0 18px 40px rgba(20,33,61,.25)}
+.grid .card:nth-child(4n+1){border-top:4px solid var(--accent)}
+.grid .card:nth-child(4n+2){border-top:4px solid var(--violet)}
+.grid .card:nth-child(4n+3){border-top:4px solid var(--gold)}
+.grid .card:nth-child(4n+4){border-top:4px solid var(--coral)}
+.about{display:grid;grid-template-columns:1.5fr 1fr;gap:24px;align-items:start}
+.about .txt p{margin:0 0 16px;font-size:18px}
+.facts{display:grid;gap:14px}
+.fact{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:12px;padding:16px 18px}
+.fact:nth-child(2){border-left-color:var(--violet)}.fact:nth-child(3){border-left-color:var(--coral)}
+.fact strong{display:block;font:700 20px "Playfair Display",sans-serif;margin-bottom:2px}
+.fact span{color:var(--muted);font-size:16px}
+@media (max-width:760px){.photo{width:132px;height:132px;order:-1}.about{grid-template-columns:1fr}}
+
+/* ===== Black & gold premium theme (always on) ===== */
+:root,:root:not([data-theme="light"]),:root[data-theme="dark"]{--bg:#0a0a0a;--surface:#141414;--ink:#f6f0e0;--muted:#b9af98;--line:#332d1c;--accent:#d4af37;--accent-ink:#0a0a0a;--soft:#231e0e;--gold:#e8c65a;--violet:#a67c00;--coral:#c9a227;--blob1:rgba(212,175,55,.16);--blob2:rgba(166,124,0,.16);--blob3:rgba(232,198,90,.09);--blob4:rgba(212,175,55,.10);color-scheme:dark}
+body{background:var(--bg)}
+.hero h1{background:linear-gradient(135deg,#fff3c4,#d4af37 55%,#a67c00);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.btn{background:linear-gradient(135deg,#f1d27a,#d4af37 55%,#a67c00);color:#0a0a0a}
+.btn.alt{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+.photo{box-shadow:0 0 0 6px var(--accent),0 18px 40px rgba(212,175,55,.25)}
+.chip.on{background:var(--soft);border-color:var(--gold);color:var(--gold)}
+.card:hover,.job:hover{border-color:var(--accent)}
+.gulf{background:linear-gradient(135deg,#1a1507,#2b2209);color:var(--ink);border:1px solid var(--accent)}
+.gulf p{opacity:1;color:var(--muted)}
+.gulf .pills span{background:rgba(212,175,55,.16);color:var(--gold);border:1px solid rgba(212,175,55,.35)}
+.pills span{border:1px solid rgba(212,175,55,.18)}
+::selection{background:var(--accent);color:#0a0a0a}
+
+/* ===== Hero without photo + font polish ===== */
+.hero{grid-template-columns:1fr;padding:48px 0 64px}
+.hero h1{font-weight:800;letter-spacing:-.01em;line-height:1.08}
+.lede{max-width:62ch}
+h2{letter-spacing:-.005em}
+.role{letter-spacing:.02em;font-weight:700}
+body{font-size:16.5px;line-height:1.65}
+.step b{font-family:"Manrope",sans-serif}
+.fact strong{font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#about">About me</a><a href="#lifecycle">Onboarding process</a><a href="#experience">Experience</a><a href="#expertise">Expertise</a><a href="#uae">UAE readiness</a><a href="#background">Background</a><a href="#contact">Contact</a></nav>
+<div class="hero">
+  <div>
+    <h1>Mohammed Abdul Awan</h1>
+    <div class="role">HR Admin · US Immigration & Onboarding · HR Operations</div>
+    <p class="lede">I take new hires from signed offer to first day on the client site, with the paperwork, background checks and visa documents done right and kept audit-ready. Two-plus years supporting U.S. HR operations for an IT staffing organization.</p>
+    <div class="chips"><span class="chip on">Immediate joiner</span><span class="chip">Based in Dubai</span><span class="chip">Open to full-time, on-site HR/Admin roles</span></div>
+    <a class="btn" href="mailto:mohmmedabdulawan@gmail.com">Email me</a><a class="btn alt" href="tel:+971588512700">+971 58 851 2700</a>
+  </div>
+  </div>
+</div>
+
+<section id="about"><div class="wrap">
+<h2>About me</h2>
+<p class="sub">Professional summary</p>
+<div class="about">
+  <div class="txt">
+    <p>I’m an HR Admin and Operations professional with 2+ years of experience in end-to-end employee onboarding, HR documentation and compliance for IT professionals. At Softworld Technologies I prepared and administered offer letters, employment contracts and agreements, coordinated background verification for new hires, and managed U.S. visa and immigration documentation across the employee lifecycle, keeping every record accurate and audit-ready.</p>
+    <p>I work closely with HR, legal and delivery teams to resolve issues faster and keep policies compliant. My B.Tech in Information Technology and Python background help me understand the technical hires I onboard, and I’m hands-on with SAP SuccessFactors.</p>
+    <p>I’m now based in the UAE, applying the same discipline to UAE visa processing and labour-law compliance (MOHRE, WPS). I’m an immediate joiner, open to full-time, on-site HR/Admin roles.</p>
+  </div>
+  <div class="facts">
+    <div class="fact"><strong>2+ years</strong><span>End-to-end onboarding for IT professionals</span></div>
+    <div class="fact"><strong>U.S. immigration</strong><span>Visa documentation across the employee lifecycle</span></div>
+    <div class="fact"><strong>Audit-ready</strong><span>Employee records and HR documentation in SAP SuccessFactors</span></div>
+  </div>
+</div>
+</div></section>
+
+<section id="lifecycle"><div class="wrap">
+<h2>How I run an onboarding</h2>
+<p class="sub">This is the cycle I managed end to end for IT professionals, including Java and related technology consultants placed on client engagements. Select a stage to see what I handled.</p>
+<div class="life">
+  <div class="steps" role="tablist" aria-label="Onboarding stages">
+    <button class="step" role="tab" aria-selected="true" aria-controls="p" id="t0"><b>1</b>Offer & contracts</button>
+    <button class="step" role="tab" aria-selected="false" aria-controls="p" id="t1"><b>2</b>Background verification</button>
+    <button class="step" role="tab" aria-selected="false" aria-controls="p" id="t2"><b>3</b>Visa & immigration</button>
+    <button class="step" role="tab" aria-selected="false" aria-controls="p" id="t3"><b>4</b>Records & HRIS</button>
+    <button class="step" role="tab" aria-selected="false" aria-controls="p" id="t4"><b>5</b>Joining & orientation</button>
+    <button class="step" role="tab" aria-selected="false" aria-controls="p" id="t5"><b>6</b>Client deployment</button>
+  </div>
+  <div class="panel" id="p" role="tabpanel" aria-live="polite"></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience</h2>
+<p class="sub">Two roles: the HR operations position that is my core, and an earlier technical internship.</p>
+<article class="job">
+  <header><div><h3>HR Admin (US Operations Specialist)</h3><div>Softworld Technologies LLC · Hyderabad, India</div></div><div class="when">Aug 2024 – Sept 2026</div></header>
+  <p style="color:var(--muted);margin:0">Supported U.S. HR operations for an IT staffing and consulting organization, covering the full onboarding cycle. Worked closely with HR, legal and delivery teams so every new hire joined smoothly and met company and client compliance requirements.</p>
+  <ul>
+    <li>Managed onboarding end to end, from offer acceptance to joining and client deployment.</li>
+    <li>Prepared, reviewed and administered offer letters, employment contracts and employment agreements.</li>
+    <li>Coordinated background verification for new hires, keeping it accurate, on time and compliant.</li>
+    <li>Handled U.S. visa and immigration documentation and guidance across the employment lifecycle.</li>
+    <li>Maintained structured, audit-ready employee records and HR documentation.</li>
+    <li>Partnered with HR, legal and delivery teams to keep HR and immigration policies compliant and to improve issue-resolution turnaround.</li>
+    <li>Used SAP SuccessFactors to manage employee data and HR processes.</li>
+    <li>Served as AI Classes Moderator, coordinating technical upskilling sessions and knowledge transfer between trainers and employees.</li>
+  </ul>
+</article>
+<article class="job">
+  <header><div><h3>Industrial Training Trainee</h3><div>Usha International · Hyderabad, India</div></div><div class="when">Nov 2020 – Apr 2021</div></header>
+  <ul style="margin-top:0"><li>Assisted in the design, maintenance and troubleshooting of electrical and electronic circuits.</li><li>Collaborated with senior engineers on technical projects and produced technical documentation.</li></ul>
+</article>
+</div></section>
+
+<section id="expertise"><div class="wrap">
+<h2>Expertise</h2>
+<p class="sub">Eight areas I can work in from day one.</p>
+<div class="grid">
+  <div class="card"><h3>HR operations & onboarding</h3><div class="pills"><span>Employee onboarding</span><span>New hire orientation</span><span>Joining formalities</span><span>Employee lifecycle management</span><span>HR administration</span></div></div>
+  <div class="card"><h3>HR & legal documentation</h3><div class="pills"><span>Offer letters</span><span>Employment contracts</span><span>Employment agreements</span><span>Legal document administration</span><span>Document verification</span></div></div>
+  <div class="card"><h3>Background verification</h3><div class="pills"><span>BGV</span><span>Pre-employment screening</span><span>Accuracy & timeline compliance</span></div></div>
+  <div class="card"><h3>Visa & immigration</h3><div class="pills"><span>U.S. immigration & visa documentation</span><span>Immigration compliance</span><span>UAE visa process knowledge</span><span>Labour card process awareness</span></div></div>
+  <div class="card"><h3>Compliance & records</h3><div class="pills"><span>HR policy compliance</span><span>Audit-ready record keeping</span><span>Employee records management</span><span>Labour law awareness (MOHRE)</span><span>WPS awareness</span></div></div>
+  <div class="card"><h3>Coordination</h3><div class="pills"><span>Stakeholder coordination</span><span>HR–legal coordination</span><span>Client coordination</span><span>Cross-functional collaboration</span><span>Issue resolution</span></div></div>
+  <div class="card"><h3>Systems & tools</h3><div class="pills"><span>SAP SuccessFactors</span><span>HRIS data entry & updates</span></div></div>
+  <div class="card"><h3>Training & technical support</h3><div class="pills"><span>Training coordination</span><span>Employee upskilling</span><span>Knowledge transfer</span><span>IT recruitment support</span><span>Technical onboarding (Java/IT)</span></div></div>
+</div>
+<div class="card" style="margin-top:16px"><h3>Personal strengths</h3><div class="pills"><span>Confidentiality & data handling</span><span>Process documentation</span><span>Time management</span><span>Attention to detail</span></div></div>
+</div></section>
+
+<section id="uae"><div class="wrap">
+<h2>Ready for UAE HR</h2>
+<p class="sub">My hands-on experience is with U.S. processes. The compliance habits carry over, and I am building UAE-specific knowledge.</p>
+<div class="gulf">
+  <h3>What transfers directly</h3>
+  <p>Offer letters, contracts, BGV, visa documentation and audit-ready records follow the same discipline in any market. In the UAE I am applying that to:</p>
+  <div class="pills"><span>UAE visa processing</span><span>Labour card process</span><span>MOHRE labour-law compliance</span><span>WPS (Wage Protection System)</span></div>
+</div>
+<div class="card" style="margin-top:16px"><h3>An HR admin who understands IT hires</h3><p style="margin:0;color:var(--muted)">With a B.Tech in Information Technology and a Python background, I can follow what a technical role needs. That helps when onboarding and supporting recruitment for IT and technical hires.</p></div>
+</div></section>
+
+<section id="background"><div class="wrap">
+<h2>Background</h2>
+<p class="sub">Education, certifications and languages.</p>
+<div class="scroll"><table>
+<tr><th>Qualification</th><th>Institution</th><th>Years</th></tr>
+<tr><td>B.Tech, Information Technology (degree certificate attested)</td><td>TKR College of Engineering & Technology (JNTUH)</td><td>2021 – 2024</td></tr>
+<tr><td>Diploma, Electrical & Electronics Engineering</td><td>TKR College of Engineering & Technology (SBTET)</td><td>2018 – 2021</td></tr>
+</table></div>
+<div class="grid" style="margin-top:16px">
+  <div class="card"><h3>Certifications</h3><div class="pills"><span>Cybersecurity, Boston Institute of Analytics</span><span>Ethical Hacking, Boston Institute of Analytics</span><span>Cybersecurity & Ethical Hacking, Udemy</span></div></div>
+  <div class="card"><h3>Languages</h3><div class="pills"><span>English (professional working)</span><span>Hindi (professional working)</span><span>Arabic (limited working)</span></div></div>
+  <div class="card"><h3>Academic project</h3><p style="margin:0;color:var(--muted)">Deep Learning for Malaria Parasite Detection: built and presented a Python deep-learning project that automates parasite detection in medical images.</p></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Let’s talk</h2>
+<p class="sub">Available to join immediately. Documents ready on request: attested B.Tech certificate, passport and experience letter.</p>
+<div class="contact">
+  <div class="card"><small>Email</small><p><a href="mailto:mohmmedabdulawan@gmail.com">mohmmedabdulawan@gmail.com</a></p></div>
+  <div class="card"><small>Phone</small><p><a href="tel:+971588512700">+971 58 851 2700</a></p></div>
+  <div class="card"><small>Location</small><p>Bur Dubai, Dubai, UAE</p></div>
+  <div class="card"><small>Availability</small><p>Immediate joiner</p></div>
+</div>
+</div></section>
+<footer><div class="wrap">Mohammed Abdul Awan · HR Admin · 2026</div></footer>
+
+<script>
+(function(){
+var S=[
+{t:"Offer & contracts",p:"Once a candidate accepts, the paperwork has to be right before anything else moves.",l:["Prepared, reviewed and administered offer letters","Handled employment contracts and employment agreements","Verified documents before they went on file"],g:"Legal document administration"},
+{t:"Background verification",p:"I coordinated BGV for new hires so screening finished accurately and on time, meeting both company and client requirements.",l:["Pre-employment screening coordination","Accuracy checks on submitted details","Tracking timelines so joining dates held"],g:"Accuracy & timeline compliance"},
+{t:"Visa & immigration",p:"For consultants placed on U.S. client engagements, I handled visa and immigration documentation and guided employees across their employment lifecycle.",l:["U.S. immigration and visa documentation","Immigration compliance with HR and legal","Now applying this to UAE visa and labour card processes"],g:"Immigration compliance"},
+{t:"Records & HRIS",p:"Every hire gets a structured file that can stand up to an audit.",l:["Employee data and HR processes managed in SAP SuccessFactors","Audit-ready employee records and HR documentation","HRIS data entry and updates"],g:"SAP SuccessFactors"},
+{t:"Joining & orientation",p:"The first day should feel organised. I covered joining formalities and new hire orientation so people started with everything in place.",l:["Joining formalities","New hire orientation","Coordination with trainers on technical upskilling sessions as AI Classes Moderator"],g:"Employee lifecycle management"},
+{t:"Client deployment",p:"The cycle ends when the consultant is working on the client engagement, compliant with company and client rules.",l:["Hand-off between HR, legal and delivery teams","Client coordination on compliance requirements","Faster issue resolution through cross-team partnership"],g:"Stakeholder coordination"}];
+var tabs=document.querySelectorAll(".step"),p=document.getElementById("p");
+function show(i){
+ tabs.forEach(function(b,j){b.setAttribute("aria-selected",j===i?"true":"false");b.tabIndex=j===i?0:-1});
+ var s=S[i];
+ p.setAttribute("aria-labelledby","t"+i);
+ p.innerHTML="<h3></h3><p></p><ul></ul><span class=\"tag\"></span>";
+ p.querySelector("h3").textContent=s.t;p.querySelector("p").textContent=s.p;
+ s.l.forEach(function(x){var li=document.createElement("li");li.textContent=x;p.querySelector("ul").appendChild(li)});
+ p.querySelector(".tag").textContent="Skill: "+s.g;
+}
+tabs.forEach(function(b,i){b.addEventListener("click",function(){show(i)});
+ b.addEventListener("keydown",function(e){var n=null;
+  if(e.key==="ArrowDown"||e.key==="ArrowRight")n=(i+1)%tabs.length;
+  if(e.key==="ArrowUp"||e.key==="ArrowLeft")n=(i+tabs.length-1)%tabs.length;
+  if(n!==null){e.preventDefault();show(n);tabs[n].focus()}})});
+show(0);
+})();
+</script>
+</body>
+</html>
